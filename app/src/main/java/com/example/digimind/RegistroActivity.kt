@@ -61,7 +61,7 @@ class RegistroActivity : AppCompatActivity() {
                     //Log.d(TAG, "createUserWithEmail:success")
                     val user = auth.currentUser
 
-                    Toast.makeText(baseContext, "${user.email} Se ha creado correctamente.",
+                    Toast.makeText(baseContext, "${user?.email} Se ha creado correctamente.",
                         Toast.LENGTH_SHORT).show()
                     //updateUI(user)
                 } else {
