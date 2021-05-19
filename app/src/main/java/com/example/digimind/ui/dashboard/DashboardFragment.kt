@@ -80,7 +80,7 @@ class DashboardFragment : Fragment() {
                 "ju" to checkThursday.isChecked,
                 "vi" to checkFriday.isChecked,
                 "sa" to checkSaturday.isChecked,
-                "tiempo" to btn_time.toString())
+                "tiempo" to btn_time.text.toString())
 
             storage.collection("actividades")
                 .add(actividad)

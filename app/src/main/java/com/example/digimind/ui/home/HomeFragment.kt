@@ -94,7 +94,7 @@ class HomeFragment : Fragment() {
                         dias.add("Sunday")
                     }
 
-                    tasks!!.add(Task(it.getString("actividad")!!, dias, it.getString("tiempo")!!))
+                    tasks.add(Task(it.getString("actividad")!!, dias, it.getString("tiempo")!!))
                 }
 
                 adaptador = AdaptadorTareas(context!!, tasks)
